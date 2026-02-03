@@ -1,6 +1,6 @@
 # 🚀 MedAssist Automation Engine
 
-A production-style backend automation system that receives incoming data via webhook, processes it through an API server, stores structured records in a database, and sends real-time alerts for monitoring and reliability.
+A production-style backend automation system that receives incoming data via webhooks, processes it through an API server, stores structured records in a database, and sends real-time alerts for monitoring and reliability.
 
 ---
 
@@ -73,8 +73,11 @@ Telegram Alerts (Monitoring)
 ## 🐳 Run with Docker
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/abdulbarimr10-ai/medassist-automation-engine.git
 cd medassist-automation-engine
+
+# Create .env file (see below)
+
 docker build -t medassist-engine .
 docker run -p 8000:8000 --env-file .env medassist-engine
 ```
@@ -87,9 +90,9 @@ http://localhost:8000/docs
 
 ---
 
-## 🔐 Environment Variables
+## 🔐 Create `.env` file
 
-Create a `.env` file:
+Create a file named `.env` in the project root:
 
 ```
 SUPABASE_URL=your_url
@@ -116,4 +119,4 @@ It represents a **production-style automation system**, not just a script.
 
 ## 👨‍💻 Author
 
-Built as part of hands-on learning in backend systems, automation, and DevOps.
+Built as part of hands-on learning in backend systems, automations.
